@@ -1,0 +1,11 @@
+
+Comando para rodar uma imagem de nginx  em http://localhost:8000
+docker run -it --rm -d -p 8000:80 --name website nginx
+
+--rm é para excluir a imagem depois q stopa o container
+-d é para rodar em background
+-p para configurar a porta
+8000 é a porta do meu host
+80 é a porta da imagem original q esta servindo meu localhost 
+--name é para dar nome ao container
+nginx é a imagem q estamos usando do hub docker
